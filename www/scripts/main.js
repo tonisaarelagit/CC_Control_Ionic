@@ -2,12 +2,12 @@ $(document).ready(function(){
 	
 	var player_ip = '10.8.99.171';
 
-	var play_list1 = 'Video 1';
-	var play_list2 = 'Video 2';
-	var play_list3 = 'Video 3';
-	var play_list4 = 'Video 4';
-	var play_list5 = 'Video 5';
-	var play_list6 = 'Video 6';
+	var play_list1 = 'Video1';
+	var play_list2 = 'Video2';
+	var play_list3 = 'Video3';
+	var play_list4 = 'Video4';
+	var play_list5 = 'Video5';
+	var play_list6 = 'Video6';
 	var play_list7 = 'Mirror';
 	
 	var startFlag = 0;
@@ -37,7 +37,7 @@ $(document).ready(function(){
 			case 'thumb_6':
 				checkStart(play_list6);
 				break;
-			case 'mirrroBtn':
+			case 'mirrorBtn':
 				checkStart(play_list7);
 				break;
 			default:
@@ -62,7 +62,7 @@ $(document).ready(function(){
 		//send play command
 		$.ajax({
 			type:     "GET",
-		    url:      "http://" + ip + ":17236/services;execute?command=start%20playlist%20-n%20\"" + playlist + "\"",               
+		    url:      "http://" + ip + ":17236/services;execute?command=start%20playlist%20-n%20\"" + playlist + "\"%20-o",               
 		    dataType: "jsonp",
 		    success: function(data)
 			{
@@ -79,7 +79,7 @@ $(document).ready(function(){
 		//send stop command
 		$.ajax({
 			type:     "GET",
-		    url:      "http://" + ip + ":17236/services;execute?command=stop%20playlist%20-n%20\"" + playlist+ "\"",               
+		    url:      "http://" + ip + ":17236/services;execute?command=stop%20playlist%20-n%20\"" + playlist+ "\"%20-o",               
 		    dataType: "jsonp",
 		    success: function(data)
 			{

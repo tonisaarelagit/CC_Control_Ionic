@@ -508,7 +508,7 @@ textarea.form-control {
 
 .btn-custom-1 {
 	background: transparent;
-	border: 1px solid #CCC;
+	border: 1px solid #000;
 	color: #000;
 	width: 100%;
 }
@@ -984,20 +984,20 @@ textarea.form-control {
 .navbar-custom .navbar-nav > li > a,
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
 	font-size: 15px;
-	text-align:center;
-	letter-spacing: 10px;
+	letter-spacing: 1px;
 	color: #fff;
+	margin: 0px 0px;
 }
 
 .navbar-custom .navbar-brand {
-	font-family: Avenir MD;
-	font-size: 35px;
+	font-family: Avenir RG;
+	font-size: 50px;
 	color: #000;
 	text-transform:uppercase;
 	text-align: center;
 	padding-top: 10px;
-	padding-bottom: 10px;
-	letter-spacing: 5px;
+	padding-bottom: 20px;
+	letter-spacing: 15px;
 }
 
 .navbar-custom .nav .open > a,
@@ -1544,11 +1544,10 @@ textarea.form-control {
 	width: 100%;
 }
 .mirrorBox {
-	width: 95%;
+	width: 100%;
 	margin: auto;
 	text-align: center;
 	padding: 5px;
-	border: 1px solid black;
 	margin-bottom: 10px;
 }
 
