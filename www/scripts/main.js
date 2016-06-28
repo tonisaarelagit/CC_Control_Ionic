@@ -62,7 +62,7 @@ $(document).ready(function(){
 		//send play command
 		$.ajax({
 			type:     "GET",
-		    url:      "http://" + ip + ":17236/services;execute?command=start%20playlist%20-n%20\"" + playlist + "\"%20-o",               
+		    url:      "http://" + ip + ":17236/services;execute?command=start%20playlist%20-n%20" + playlist + "%20-o%20-fi%201%20-fo%201%20-g%20CC",
 		    dataType: "jsonp",
 		    success: function(data)
 			{
@@ -79,7 +79,7 @@ $(document).ready(function(){
 		//send stop command
 		$.ajax({
 			type:     "GET",
-		    url:      "http://" + ip + ":17236/services;execute?command=stop%20playlist%20-n%20\"" + playlist+ "\"%20-o",               
+		    url:      "http://" + ip + ":17236/services;execute?command=stop%20playlist%20-n%20" + playlist+ "%20-o%20-fo%201%20-g%20CC",
 		    dataType: "jsonp",
 		    success: function(data)
 			{
