@@ -92,4 +92,12 @@ $(document).ready(function(){
 		}); 
 	}
 
-})
+});
+
+document.addEventListener("deviceready", function(){
+    if(typeof(StatusBar) !== 'undefined'){
+        StatusBar.hide();
+    }
+}, false);
+
+

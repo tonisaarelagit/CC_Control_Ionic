@@ -23,6 +23,11 @@
   src: url('../fonts/AvenirNextLTPro-UltLtCn.otf');
 }
 
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+}
+
 /* ---------------------------------------------- /*
  * General styles
 /* ---------------------------------------------- */
